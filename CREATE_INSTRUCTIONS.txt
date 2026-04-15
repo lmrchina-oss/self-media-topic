@@ -1,0 +1,41 @@
+# 创建项目目录的说明
+
+请在您的本地电脑（Windows）执行以下操作：
+
+## 📁 目录结构
+
+创建以下目录结构：
+
+```
+self-media-topic/
+├── SKILL.md
+├── UNIVERSAL_USAGE.md
+├── README.md
+└── references/
+    ├── scoring_criteria.md
+    ├── platform_guidelines.md
+    └── output_template.md
+```
+
+## 🖥️ 在Windows PowerShell中执行
+
+```powershell
+# 1. 创建主目录
+mkdir self-media-topic
+
+# 2. 进入目录
+cd self-media-topic
+
+# 3. 创建子目录
+mkdir references
+
+# 4. 查看目录结构
+dir
+```
+
+## 📝 下一步
+
+接下来我会逐个提供文件内容，您需要：
+1. 复制文件内容
+2. 在对应路径创建文件
+3. 粘贴内容保存

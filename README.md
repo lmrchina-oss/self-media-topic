@@ -1,0 +1,216 @@
+# 自媒体选题 (Self Media Topic)
+
+智能追踪自媒体热点，基于6维度评价体系推荐高潜力选题并提供标题优化建议。
+
+## ✨ 功能特性
+
+### 🔍 智能热点追踪
+- 支持多领域关键词搜索
+- 可选时间范围（今天/近一周/近一个月/近三个月）
+- 覆盖小红书、B站、公众号三大平台
+
+### 📊 专业评分体系（总分100分）
+- **热度趋势**（25分）：热榜表现、搜索趋势、讨论热度
+- **时间匹配度**（20分）：时间敏感性、时效性价值
+- **平台适配度**（20分）：用户画像匹配、内容偏好契合
+- **内容稀缺性**（15分）：竞争度分析、差异化空间
+- **可执行性**（10分）：制作难度、资源需求
+- **商业价值**（10分）：变现潜力、长期价值
+
+### 🎯 平台标题优化
+- **小红书**：疑问式 + 利益点 + emoji + 关键词
+- **B站**：悬念/反差 + 数据/数字 + 垂直领域 + 情绪词
+- **公众号**：数字 + 痛点 + 解决方案 + 紧迫感
+
+### 💡 执行建议
+- 发布时间建议
+- 内容形式推荐
+- 关键元素清单
+- 制作注意事项
+
+---
+
+## 🌍 跨平台使用
+
+本工具支持在 **Claude、OpenAI、WorkBuddy、扣子** 等多个平台使用！
+
+### 🚀 快速开始
+
+#### 方式1：直接复制提示词使用（推荐）
+
+适用于任何AI助手：
+
+1. 复制下面的提示词
+2. 发送给任何AI助手（Claude、ChatGPT、WorkBuddy等）
+3. 输入你的选题需求
+
+**[点击查看完整提示词](self-media-topic/SKILL.md)**
+
+#### 方式2：下载安装包
+
+| 平台 | 文件 | 安装方式 |
+|------|------|---------|
+| **扣子** | `self-media-topic.skill` | 导入到扣子工作台 |
+| **Claude** | `self-media-topic-complete.zip` | 解压使用配置文件 |
+| **OpenAI** | `self-media-topic-complete.zip` | 解压使用配置文件 |
+| **WorkBuddy** | `self-media-topic-complete.zip` | 解压使用配置文件 |
+
+详细安装说明请查看：[多平台安装指南](releases/README.md)
+
+---
+
+## 📖 使用示例
+
+### 基础用法
+```
+帮我分析AI工具领域的小红书和公众号热点，近一周时间，推荐5个选题
+```
+
+### 完整参数
+```
+领域：AI工具、美妆、健身、创业等
+平台：小红书、B站、公众号（可多选）
+时间：今天、近一周、近一个月、近三个月
+数量：1-10个
+```
+
+### 输出示例
+
+```markdown
+### 选题 #1：AI写作工具深度测评
+
+**🔥 爆款评分：85/100**
+
+**📊 详细评分：**
+- 热度趋势：22/25 | 近一周搜索量增长200%
+- 时间匹配度：18/20 | 热点快速上升，时效性强
+...
+
+**🎯 目标平台标题建议：**
+- 小红书：每天5分钟，这个AI写作工具让我效率提升10倍 ✨
+- B站：耗时7天测试10款AI写作工具，结果让我意外！
+- 公众号：2024年最值得关注的5个AI写作工具，第3个我每天都在用
+...
+```
+
+---
+
+## 📁 文件结构
+
+```
+self-media-topic/
+├── self-media-topic/              # 源代码目录
+│   ├── SKILL.md                    # 主使用指导
+│   ├── UNIVERSAL_USAGE.md          # 跨平台使用指南
+│   ├── README.md                   # 项目说明
+│   └── references/                 # 参考文档
+│       ├── scoring_criteria.md     # 评分标准
+│       ├── platform_guidelines.md  # 平台指南
+│       └── output_template.md      # 输出模板
+├── releases/                      # 多平台配置
+│   ├── claude_desktop_config.json # Claude配置
+│   ├── openai_gpt_config.json     # OpenAI GPTs配置
+│   ├── assistant_api_config.json  # OpenAI API配置
+│   ├── workbuddy_agent_config.yaml # WorkBuddy配置
+│   └── README.md                   # 安装说明
+├── self-media-topic.skill         # 扣子安装包
+├── self-media-topic-complete.zip  # 多平台完整包
+└── README.md                      # 本文件
+```
+
+---
+
+## 🎯 适用场景
+
+- ✅ 自媒体创作者选择内容方向
+- ✅ 内容团队制定选题策略
+- ✅ 新手学习选题方法论
+- ✅ 运营人员分析热点趋势
+- ✅ 品牌方规划营销内容
+
+---
+
+## 🌟 平台支持
+
+| 平台 | 使用方式 | 兼容性 |
+|------|---------|--------|
+| **Claude** | 复制提示词或配置文件 | ✅ 完全支持 |
+| **OpenAI (ChatGPT)** | 复制提示词或配置文件 | ✅ 完全支持 |
+| **WorkBuddy** | Agent配置或对话模板 | ✅ 完全支持 |
+| **扣子 (Coze)** | 导入Skill文件 | ✅ 原生支持 |
+| **其他AI平台** | 复制提示词 | ✅ 通用支持 |
+
+详细使用说明请查看 [跨平台使用指南](self-media-topic/UNIVERSAL_USAGE.md)
+
+---
+
+## 🚀 立即开始
+
+### Claude用户
+```
+1. 复制完整提示词（见 SKILL.md）
+2. 发送给Claude
+3. 输入：分析AI工具领域的小红书热点，推荐5个选题
+```
+
+### ChatGPT用户
+```
+1. 复制完整提示词（见 SKILL.md）
+2. 发送给ChatGPT
+3. 输入：分析健身领域的公众号热点，推荐3个选题
+```
+
+### WorkBuddy用户
+```
+1. 创建新Agent，配置系统提示词
+2. 使用Agent进行选题分析
+```
+
+### 扣子用户
+```
+1. 下载 self-media-topic.skill
+2. 导入到扣子工作台
+3. 直接使用
+```
+
+---
+
+## 📄 开源协议
+
+MIT License
+
+---
+
+## 🏷️ 标签
+
+`ai` `content-creation` `social-media` `hot-topic` `chinese` `跨平台` `claude` `openai` `workbuddy` `coze`
+
+---
+
+## 🔗 相关链接
+
+- [跨平台使用指南](self-media-topic/UNIVERSAL_USAGE.md)
+- [多平台安装指南](releases/README.md)
+- [评分标准详解](self-media-topic/references/scoring_criteria.md)
+- [平台优化指南](self-media-topic/references/platform_guidelines.md)
+- [标准输出模板](self-media-topic/references/output_template.md)
+
+---
+
+## 💡 为什么选择这个工具？
+
+✅ **跨平台兼容**：支持Claude、OpenAI、WorkBuddy、扣子等多个平台  
+✅ **系统化评分**：6维度专业评分体系，科学评估选题潜力  
+✅ **平台专属优化**：针对不同平台特征优化标题，提高曝光率  
+✅ **即开即用**：复制提示词即可使用，无需复杂配置  
+✅ **开源免费**：MIT协议，自由使用和修改  
+
+---
+
+## 🤝 贡献
+
+欢迎提交Issue和Pull Request！
+
+---
+
+**开始使用**：[查看使用文档](self-media-topic/SKILL.md) | [下载安装包](https://github.com/lmrchina-oss/self-media-topic/releases)

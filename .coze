@@ -1,6 +1,6 @@
 [skill]
-  skill_package = "self-media-topic.skill"
-  name = "self-media-topic"
+  skill_package = "自媒体选题.skill"
+  name = "自媒体选题"
   description = "智能追踪自媒体热点，基于6维度评价体系推荐高潜力选题并提供标题优化建议；当用户需要选择内容方向、分析热点趋势或优化平台标题时使用"
   project_name = "自媒体选题技能\n"
   project_description = "智能追踪热点推荐高潜力选题"
